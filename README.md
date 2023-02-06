@@ -1,7 +1,18 @@
 
 - [Adding a new SSH key to your GitHub Account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-- [SSH key generation and addition to agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [SSH key generation and addition to SSH agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+# Clone SSH Repo
+
+- Navigate to SoftServ [GitHub Repo](https://github.com/scientist-softserv/softserv-website)]
+
+- Click code, select SSH, click copy link
+
+``` terminal
+ $ git clone git@github.com:scientist-softserv/softserv-website.git
+```
+
 
 # Generate key
 
@@ -32,3 +43,4 @@
 
  $ git clone git@github.com:scientist-softserv/softserv-website.git
 ```
+Go to SoftServ 
