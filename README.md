@@ -5,12 +5,14 @@
 
 # Clone SSH Repo
 
-- Navigate to SoftServ [GitHub Repo](https://github.com/scientist-softserv/softserv-website)]
+- Navigate to SoftServ [GitHub Repo](https://github.com/scientist-softserv/softserv-website)
 
 - Click code, select SSH, click copy link
 
-``` terminal
+``` console
  $ git clone git@github.com:scientist-softserv/softserv-website.git
+
+ $ cd softserv-website
 ```
 
 
@@ -28,10 +30,16 @@
 
 - Copy and paste your personal access token somewhere safe
 
+
+
 ``` console
  $ cd ~/Desktop
 
  $ ssh-keygen -t ed25519 -C "your_email@example.com"
+
+$ Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM: [Press enter]
+
+// When this shows up press enter
 
  $ pbcopy < ~/.ssh/id_ed25519.pub
 
