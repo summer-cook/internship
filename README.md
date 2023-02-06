@@ -9,7 +9,7 @@
 
 - Click code, select SSH, click copy link
 
-``` html
+``` terminal
  $ git clone git@github.com:scientist-softserv/softserv-website.git
 
  $ cd softserv-website
@@ -32,7 +32,7 @@
 
 
 
-``` html
+``` terminal
  $ cd ~/Desktop
 
  $ ssh-keygen -t ed25519 -C "your_email@example.com"
@@ -58,6 +58,17 @@
 
  $ ls id_ed25519.pub
 
- $ git clone git@github.com:scientist-softserv/softserv-website.git
+ $ code .ssh
+
+ // With VS code open,
+ // navigate to the .pub key file
+ // copy and paste contents somewhere safe
 ```
-Go to SoftServ 
+# Adding SSH key to SSH agent
+
+- Navigate to Your GitHub profile settings / SSH and GPG keys (it's on the left)
+- Click New SSH key
+- Give it a title
+- Key type: Authentication Key
+- Copy and paste your keyfingerprint,  e-mail, and key randomart image into 'Key'
+- Click 'Add SSH Key'
