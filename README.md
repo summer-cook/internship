@@ -9,7 +9,7 @@
 
 - Click code, select SSH, click copy link
 
-``` console
+``` javascript
  $ git clone git@github.com:scientist-softserv/softserv-website.git
 
  $ cd softserv-website
@@ -32,7 +32,7 @@
 
 
 
-``` console
+``` javascript
  $ cd ~/Desktop
 
  $ ssh-keygen -t ed25519 -C "your_email@example.com"
