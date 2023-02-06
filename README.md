@@ -37,14 +37,18 @@
 
  $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
+ // Remember to change the e-mail to your GitHub associated e-mail address
+
  $ > Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM: [Press enter]
 
- # When this shows up press enter
+ // When this shows up press enter
 
  $ > Enter passphrase (empty for no passphrase): [Type a passphrase]
  $ > Enter same passphrase again: [Type passphrase again]
 
- # When this shows up also press enter, you can leave it blank
+ // When this shows up also press enter, you can leave it blank
+
+ // When the key fingerprint, your e-mail, and the key randomart image show up, copy paste it somewhere safe
 
  $ pbcopy < ~/.ssh/id_ed25519.pub
 
