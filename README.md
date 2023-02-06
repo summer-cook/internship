@@ -1,21 +1,3 @@
-
-- [Adding a new SSH key to your GitHub Account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-
-- [SSH key generation and addition to SSH agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-
-# Clone SSH Repo
-
-- Navigate to SoftServ [GitHub Repo](https://github.com/scientist-softserv/softserv-website)
-
-- Click code, select SSH, click copy link
-
-``` console
- $ git clone git@github.com:scientist-softserv/softserv-website.git
-
- $ cd softserv-website
-```
-
-
 # Generate key
 
 - Go to your GitHub / user settings / Developer Settings / Personal access tokens / Tokens (classic)
@@ -32,7 +14,7 @@
 
 
 
-``` console
+``` terminal
  $ cd ~/Desktop
 
  $ ssh-keygen -t ed25519 -C "your_email@example.com"
@@ -72,3 +54,24 @@
 - Key type: Authentication Key
 - Copy and paste your keyfingerprint,  e-mail, and key randomart image into 'Key'
 - Click 'Add SSH Key'
+- If it asks you to reply "yes", "no", or "fingerprint", say "yes"
+
+# Clone  Repo
+
+- Navigate to SoftServ [GitHub Repo](https://github.com/scientist-softserv/softserv-website)
+
+- Click code, select SSH, click copy link
+
+``` terminal
+ $ git clone git@github.com:scientist-softserv/softserv-website.git
+
+ // When prompted, say "yes"
+
+ $ cd softserv-website
+```
+
+# Possibly helpful links
+
+- [Adding a new SSH key to your GitHub Account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+- [SSH key generation and addition to SSH agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
