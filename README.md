@@ -37,9 +37,14 @@
 
  $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
-$ Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM: [Press enter]
+ $ > Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM: [Press enter]
 
-// When this shows up press enter
+ # When this shows up press enter
+
+ $ > Enter passphrase (empty for no passphrase): [Type a passphrase]
+ $ > Enter same passphrase again: [Type passphrase again]
+
+ # When this shows up also press enter, you can leave it blank
 
  $ pbcopy < ~/.ssh/id_ed25519.pub
 
