@@ -1,4 +1,8 @@
-# Generate key
+# Not too sure about the title, but a few interesting notes below
+
+# Generating an SSH key and adding it to the SSH agent in order to ...
+
+## Generate key
 
 - Go to your GitHub / user settings / Developer Settings / Personal access tokens / Tokens (classic)
 
@@ -11,7 +15,6 @@
  [✅] repo, [✅] write:packages, [✅] write:discussion
 
 - Copy and paste your personal access token somewhere safe
-
 
 
 ``` console
@@ -45,9 +48,10 @@
  // With VS code open,
  // navigate to the .pub key file
  // copy and paste contents somewhere safe
+ 
 ```
 
-# Adding SSH key to SSH agent
+## Adding SSH key to SSH agent
 
 - Navigate to Your GitHub profile settings / SSH and GPG keys (it's on the left)
 - Click New SSH key
@@ -57,7 +61,7 @@
 - Click 'Add SSH Key'
 - If it asks you to reply "yes", "no", or "fingerprint", say "yes"
 
-# Clone  Repo
+## Clone  Repo
 
 - Navigate to SoftServ [GitHub Repo](https://github.com/scientist-softserv/softserv-website)
 
@@ -71,7 +75,7 @@
  $ cd softserv-website
 ```
 
-# Possibly helpful links
+## Possibly helpful links
 
 - [Adding a new SSH key to your GitHub Account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
