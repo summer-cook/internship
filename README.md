@@ -1,8 +1,4 @@
-# Not too sure about the title, but a few interesting notes below
-
-# Generating an SSH key and adding it to the SSH agent in order to ...
-
-## Generate key
+## Generate SSH key
 
 - Go to your GitHub / user settings / Developer Settings / Personal access tokens / Tokens (classic)
 
