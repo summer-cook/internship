@@ -17,20 +17,25 @@
  $ cd ~/Desktop
 
  $ ssh-keygen -t ed25519 -C "your_email@example.com"
+```
 
- // Remember to change the e-mail to your GitHub associated e-mail address
+Remember to change the e-mail to your GitHub associated e-mail address
+When this shows up press enter
 
+``` console
  $ > Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM: [Press enter]
+```
 
- // When this shows up press enter
+When this shows up also press enter, you can leave it blank
 
+``` console
  $ > Enter passphrase (empty for no passphrase): [Type a passphrase]
  $ > Enter same passphrase again: [Type passphrase again]
+```
 
- // When this shows up also press enter, you can leave it blank
+When the key fingerprint, your e-mail, and the key randomart image show up, copy paste it somewhere safe
 
- // When the key fingerprint, your e-mail, and the key randomart image show up, copy paste it somewhere safe
-
+``` console
  $ pbcopy < ~/.ssh/id_ed25519.pub
 
  $ ls -a    
@@ -40,13 +45,9 @@
  $ ls id_ed25519.pub
 
  $ code .ssh
-
- // With VS code open,
- // navigate to the .pub key file
- // copy and paste contents somewhere safe
- 
 ```
-
+- With VS code open, navigate to the .pub key file, copy and paste contents somewhere safe
+ 
 ## Adding SSH key to SSH agent
 
 - Navigate to Your GitHub profile settings / SSH and GPG keys (it's on the left)
