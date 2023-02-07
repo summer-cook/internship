@@ -1,4 +1,4 @@
-## Generate SSH key
+## Generate an Access Token
 
 - Go to your GitHub / user settings / Developer Settings / Personal access tokens / Tokens (classic)
 
@@ -10,8 +10,12 @@
 
  [✅] repo, [✅] write:packages, [✅] write:discussion
 
-- Copy and paste your personal access token somewhere safe
+- Copy and paste your personal access token somewhere safe you will use this later when you push up code
 
+
+## Generate SSH key
+
+- Run the following commands in your console
 
 ``` console
  $ cd ~/Desktop
@@ -19,8 +23,9 @@
  $ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
-- Remember to change the e-mail to your GitHub associated e-mail address
-- When this shows up press enter
+  - Remember to change the e-mail to your GitHub associated e-mail address
+
+- When this shows up you can accept the default location for the key by pressing enter.
 
 ``` console
  $ > Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM: [Press enter]
@@ -33,20 +38,18 @@
  $ > Enter same passphrase again: [Type passphrase again]
 ```
 
-- When the key fingerprint, your e-mail, and the key randomart image show up, copy paste it somewhere safe
+- When the key fingerprint, your e-mail, and the key randomart image show up, copy paste the key somewhere safe
 
 ``` console
  $ pbcopy < ~/.ssh/id_ed25519.pub
 
- $ ls -a    
-
- $ ls .ssh  
+ $ cd .ssh  
 
  $ ls id_ed25519.pub
 
  $ code .ssh
 ```
-- With VS code open, navigate to the .pub key file, copy and paste contents somewhere safe
+- With VS code open, navigate to the .pub key file, copy the contents for use in the next step
  
 ## Adding SSH key to SSH agent
 
@@ -64,7 +67,7 @@
 
 - If it asks you to reply "yes", "no", or "fingerprint", say "yes"
 
-## Clone  Repo
+## Clone Repo
 
 - Navigate to SoftServ [GitHub Repo](https://github.com/scientist-softserv/softserv-website)
 
