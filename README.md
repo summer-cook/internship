@@ -72,9 +72,11 @@
 
 ``` console
  $ git clone git@github.com:scientist-softserv/softserv-website.git
+```
 
- // When prompted, say "yes"
+If/when prompted, say "yes"
 
+``` console
  $ cd softserv-website
 ```
 
