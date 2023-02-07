@@ -19,21 +19,21 @@
  $ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
-Remember to change the e-mail to your GitHub associated e-mail address
-When this shows up press enter
+- Remember to change the e-mail to your GitHub associated e-mail address
+- When this shows up press enter
 
 ``` console
  $ > Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM: [Press enter]
 ```
 
-When this shows up also press enter, you can leave it blank
+- When this shows up also press enter, you can leave it blank
 
 ``` console
  $ > Enter passphrase (empty for no passphrase): [Type a passphrase]
  $ > Enter same passphrase again: [Type passphrase again]
 ```
 
-When the key fingerprint, your e-mail, and the key randomart image show up, copy paste it somewhere safe
+- When the key fingerprint, your e-mail, and the key randomart image show up, copy paste it somewhere safe
 
 ``` console
  $ pbcopy < ~/.ssh/id_ed25519.pub
@@ -51,11 +51,17 @@ When the key fingerprint, your e-mail, and the key randomart image show up, copy
 ## Adding SSH key to SSH agent
 
 - Navigate to Your GitHub profile settings / SSH and GPG keys (it's on the left)
+
 - Click New SSH key
+
 - Give it a title
+
 - Key type: Authentication Key
+
 - Copy and paste your keyfingerprint,  e-mail, and key randomart image into 'Key'
+
 - Click 'Add SSH Key'
+
 - If it asks you to reply "yes", "no", or "fingerprint", say "yes"
 
 ## Clone  Repo
